@@ -15,7 +15,7 @@ function geoLocSuccess(position) {
         const temp = json.main.temp;
         const weatherDescription = json.weather[0].description;
         const icon = String(json.weather[0].icon);
-        weatherIcon.src = `./img/${icon}.png`;
+        weatherIcon.src = `./src/img/${icon}.png`;
         information.innerHTML = `${city}, ${temp} ${weatherDescription}`;
     })
 }

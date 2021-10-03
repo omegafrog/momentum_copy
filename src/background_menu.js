@@ -1,5 +1,5 @@
 const backgroundMenu = document.querySelector(".js-background-menu ul");
-const backgrounds = ["./img/0.jpg","./img/1.jpg","./img/2.jpg","./img/3.jpg","./img/4.jpg","./img/5.jpg","./img/6.jpg","./img/7.jpg","./img/8.jpg","./img/9.jpg"];
+const backgrounds = ["./src/img/0.jpg","./src/img/1.jpg","./src/img/2.jpg","./src/img/3.jpg","./src/img/4.jpg","./src/img/5.jpg","./src/img/6.jpg","./src/img/7.jpg","./src/img/8.jpg","./src/img/9.jpg"];
 const bgNames = ["liberty Bridge, Budapest", "parthenon, acropolis,Athens", ""]
 const currentBg = document.querySelector(".background");
 const button = document.querySelector("#backgroundFold");
@@ -10,7 +10,7 @@ backgrounds.forEach(function(bg){
     const button = document.createElement("button");
     img.src = bg;
     button.appendChild(img);
-    if(String(`./img/${currentBg.id}.jpg`) === bg){
+    if(String(`./src/img/${currentBg.id}.jpg`) === bg){
         li.classList.add("selected");
     }
     backgroundMenu.appendChild(li);
