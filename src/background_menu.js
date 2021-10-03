@@ -15,7 +15,13 @@ backgrounds.forEach(function(bg){
     }
     backgroundMenu.appendChild(li);
     li.appendChild(button);
-
+    
+    button.addEventListener("click", function(event){
+        currentBg.src = event.target.src;
+        const beforeBg = document.querySelector(".selected");
+        beforeBg.classList.remove("selected");
+        this.parentElement.classList.add("selected");
+    })
     
 });
 
