@@ -35,7 +35,7 @@ body {
     "backgroundMenu . . todo todo"
     "backgroundMenu . greetingNlogin todo todo"
     "backgroundMenu . . todo todo"
-    "backgroundMenu . . todo todo";
+    "backgroundMenu . description todo todo";
     /* margin-left: 50px; */
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -66,8 +66,17 @@ body {
     z-index: -1;
     filter:brightness(80%);
     width:100%;
-    height:100%;
-    
+    height:100%; 
+}
+.background-location{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content:center;
+    align-content:center;
+    text-align:center;
+    color:white;
+    font-size:20px;
+    grid-area:description;
 }
 .loginDiv, .js-greeting{
     grid-area:greetingNlogin;
@@ -102,7 +111,7 @@ body {
     font-weight:bold;
     text-align:center;
     grid-area:todo;
-    margin-top:53px;
+    margin-top:40px;
 }
 .js-todo h3{
     border:3px solid white;
