@@ -1,3 +1,4 @@
+
 .appear{
     animation: fade-in 1s;
 }
@@ -20,4 +21,161 @@
     to{
         opacity:0;
     }
+
+body{
+    display:grid;
+    grid-template-columns:repeat(5,20%);
+    grid-template-rows:repeat(5,20%);
+    z-index: 0;
+    grid-template-areas:
+    "information information . todo todo"
+    "backgroundMenu . . todo todo"
+    "backgroundMenu . greetingNlogin todo todo"
+    "backgroundMenu . . todo todo"
+    "backgroundMenu . . todo todo";
+    margin-left: 50px;
+}
+
+
+.background{
+    position:absolute;
+    width:100%;
+    top:0px;
+    left:0px;
+    z-index: -1;
+    filter:brightness(80%);
+    width:100%;
+    height:100%;
+    
+}
+.js-loginForm, .js-greeting{
+    grid-area:greetingNlogin;
+}
+
+.information{
+    display:flex;
+    flex-direction:space-around;
+    justify-content: center;
+    align-items:center;
+    grid-area:information;
+    margin-left:10px;
+    
+    font-weight:bold;
+    border: 4px solid white;
+    border-radius:30px;
+    margin:50px;
+    opacity:0.8;
+    color:white;
+}
+#information{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+
+.js-todo{
+    color:white;
+    font-weight:bold;
+    text-align:center;
+    grid-area:todo;
+    margin-top:53px;
+}
+.js-todo div{
+    border: 3px solid white;
+    border-radius:45px;
+    font-size:25px;
+    margin-left:30%;
+    margin-right:30%;
+}
+.js-todo input{
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    background-color: transparent;
+    border-bottom: 3px solid white;
+    outline:none;
+    color:white;
+    font-size:30px;
+    margin-left:10%;
+    text-align:center;
+    margin-top:10px;
+}
+.js-todo button{
+    background-color:transparent;
+    border:none;
+    font-size:20px;
+    color:white;
+    
+    margin-left:10px;
+}
+.js-todo #submit{
+    border:3px solid white;
+    border-radius:45px;
+}
+.js-todo ul{
+    list-style:none;
+    font-size:20px;
+}
+.js-weather{
+    display:flex;
+    justify-content:center;
+}
+.js-weather img{
+    width:20%;
+    height:20%;
+}
+
+#backgroundFold{
+    background-color: transparent;
+    border:4px solid white;
+    border-radius:100%;
+    width:50px;
+    height:50px;
+    
+}
+#backgroundFold img{
+    width:30px;
+    height:30px;
+}
+
+.js-background-menu{
+    grid-area:backgroundMenu;
+}
+
+.js-greeting{
+    color:white;
+    font-size:45px;
+}
+
+.js-background-menu ul{
+    background-color :#dfe6e9;
+    height:80%;
+    overflow:overlay;
+    overflow-x:hidden;
+    opacity:0.8;
+    list-style:none;
+    padding-left:0px;
+    border-radius:10px;
+}
+.js-background-menu li:first-child{
+    border:3px solid white;
+}
+.js-background-menu button{
+    background-color:transparent;
+    border:none;
+}
+.js-background-menu img{
+    width:100%;
+    height:auto;
+}
+.js-background-menu div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.js-background-menu span{
+    font-weight:bold;
+    font-size: 18px; 
+    color:white;
 }
