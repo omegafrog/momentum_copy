@@ -19,3 +19,11 @@ backgrounds.forEach(function(bg){
     
 });
 
+button.addEventListener("click", function(){
+    if(backgroundMenu.hidden === true){
+        backgroundMenu.hidden = false;
+    }else{
+        backgroundMenu.hidden = true;
+    }
+
+});	
