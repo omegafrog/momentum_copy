@@ -1,34 +1,43 @@
 <html>
-    <head>
-        <title>momentum</title>
-        <meta charset="UTF-8"/>
-    </head>
-    <body>
-        <form class = "js-loginForm">
-            <h1 class="js-login">Hello, <input type="text" ></input></h1>
-        </form>
-        <h1 class="js-greeting" hidden></h1>
-        <div class = "js-date"></div>
+
+<head>
+    <title>momentum</title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <form class="js-loginForm">
+        <h1 class="js-login">Hello, <input type="text"></input></h1>
+    </form>
+    <h1 class="js-greeting" hidden></h1>
+    <div class="information">
+        <div class="js-date"></div>
         <div class="js-clock">00:00</div>
-        <div class="js-todo"><h3>Today's todoList</h3>
-            <input type="text"><button id="submit">go!</button>
-            <ul></ul>
-        </div>
         <div class="js-weather">
             <img id="weatherIcon">
-            <span id="information"></span>
+            <div id="information"></div>
         </div>
-        <button id = "backgroundFold"><img src="./img/menu.png"></button>
-        <div class="js-background-menu">
-            <ul></ul>
+    </div>
+    <div class="js-todo">
+        <div>Today's todoList</div>
+        <input type="text"><button id="submit">go!</button>
+        <ul></ul>
+    </div>
+    <div class="js-background-menu">
+        <div>
+            <button id="backgroundFold"><img src="./img/menu.png"></button><span>Where do you want to go?</span>
         </div>
-        <img class="background">
-        <script src="./todo.js"></script>
-        <script src="./greetings.js"></script>
-        <script src="./clock.js"></script>
-        <script src="./calender.js"></script>
-        <script src="./weather.js"></script>
-        <script src="./background.js"></script>
-        <script src="./background_menu.js"></script>
-    </body>
+        <ul hidden></ul>
+    </div>
+    <img class="background">
+    <script src="./todo.js"></script>
+    <script src="./greetings.js"></script>
+    <script src="./clock.js"></script>
+    <script src="./calender.js"></script>
+    <script src="./weather.js"></script>
+    <script src="./background.js"></script>
+    <script src="./background_menu.js"></script>
+    <link rel="stylesheet" href="style.css">
+</body>
+
 </html>
