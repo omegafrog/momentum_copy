@@ -5,7 +5,6 @@ const backgroundLocation = document.querySelector(".background-location");
 function changeBg(){
     const bgIndex = Math.ceil(Math.random()*(bgs.length-1));
     const bg = document.querySelector(".background");
-    bg.classList.add("appear");
     bg.src=bgs[bgIndex];
     bg.id = bgIndex;
     console.log(bgNames[bgIndex]);
