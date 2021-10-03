@@ -6,36 +6,33 @@
 </head>
 
 <body>
-    <form class="js-loginForm">
-        <h1 class="js-login">Hello, <input type="text"></input></h1>
-    </form>
-
-    <div id="after-login" hidden>
-      <h1 class="js-greeting" hidden></h1>
-      <div class="information">
+    <div class="loginDiv">
+        <form class="js-loginForm">
+            <h1 class="js-login">Hello, <input type="text"></input></h1>
+        </form>
+    </div>
+    <h1 class="js-greeting" hidden></h1>
+    <div class="information">
         <div class="js-date"></div>
         <div class="js-clock">00:00</div>
-        <div class="js-todo">
-            <h3>Today's todoList</h3>
-            <input type="text"><button id="submit">go!</button>
-            <ul></ul>
-        </div>
+
 
         <div class="js-weather">
-          <img id="weatherIcon">
-          <div id="information"></div>
+            <img id="weatherIcon">
+            <div id="information"></div>
         </div>
-      </div>
-      <div class="js-todo">
-          <div>Today's todoList</div>
-          <input type="text"><button id="submit">go!</button>
-          <ul></ul>
-      </div>
+    </div>
+    <div class="js-todo">
+        <h3>Today's todoList</h3>
+        <input type="text"><button id="submit">go!</button>
+        <ul></ul>
+    </div>
     <div class="js-background-menu">
         <div>
             <button id="backgroundFold"><img src="./img/menu.png"></button><span>Where do you want to go?</span>
         </div>
         <ul hidden></ul>
+
     </div>
     <img class="background">
     <script src="./todo.js"></script>

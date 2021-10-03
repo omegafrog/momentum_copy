@@ -2,9 +2,10 @@ const bgs = ["./img/0.jpg","./img/1.jpg","./img/2.jpg","./img/3.jpg","./img/4.jp
 function changeBg(){
     const bgIndex = Math.ceil(Math.random()*(bgs.length-1));
     const bg = document.querySelector(".background");
+    bg.classList.add("appear");
     bg.src=bgs[bgIndex];
     bg.id = bgIndex;
-    document.body.appendChild(bg);
+    
 }
 changeBg();
 setInterval(changeBg,1000*60*1);
